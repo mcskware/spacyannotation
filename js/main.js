@@ -106,6 +106,7 @@ $(document).ready(function () {
 		var numberOfSamples = rawDataArray.length;
 		localStorage.setItem("spacy-annotation-sample-count", numberOfSamples);
 		preparedRawData = "";
+		console.log("rawDataArray is " + rawDataArray);
 		rawDataArray.forEach(function (rawData) {
 			preparedRawData += "<div class = 'raw-data-row'>" + rawData + "</div>"
 		});
